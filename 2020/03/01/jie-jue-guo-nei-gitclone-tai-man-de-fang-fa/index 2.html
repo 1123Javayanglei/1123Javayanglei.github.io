@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="解决国内gitClone太慢的方法, Hexo">
+    <meta name="description" content="解决git clone 卡顿的问题
+众所周知，国内因为不可描述的原因，git clone 特别卡,今天搞了很久，终于解决了，下面是方法
+
+
+第一步 把github项目迁移到码云
+获取要迁移GitHub项目的 Web Url:在项目首页点击”">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | Hexo</title>
+    <title>解决国内gitClone太慢的方法 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">解决国内gitClone太慢的方法</h1>
                 </div>
             </div>
         </div>
@@ -454,15 +459,38 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <h2 id="解决git-clone-卡顿的问题"><a href="#解决git-clone-卡顿的问题" class="headerlink" title="解决git clone 卡顿的问题"></a>解决git clone 卡顿的问题</h2><blockquote>
+<p>众所周知，国内因为不可描述的原因，git clone 特别卡,今天搞了很久，终于解决了，下面是方法</p>
+</blockquote>
+<hr>
+<h5 id="第一步-把github项目迁移到码云"><a href="#第一步-把github项目迁移到码云" class="headerlink" title="第一步 把github项目迁移到码云"></a>第一步 把github项目迁移到码云</h5><ol>
+<li>获取要迁移GitHub项目的 Web Url:在项目首页点击”clone or download”,点击复制就有了</li>
+<li>在码云上新建一个项目: 在主页点击”+”，选择”从GitHub导入仓库”，填写”Git 仓库url地址”,就是刚复制的</li>
+</ol>
+<hr>
+<h5 id="第二步-本地clone码云仓库"><a href="#第二步-本地clone码云仓库" class="headerlink" title="第二步 本地clone码云仓库"></a>第二步 本地clone码云仓库</h5><ol>
+<li>复制码云仓库的web url地址</li>
+<li>打开终端</li>
+<li>进入想要放置项目的仓库</li>
+<li>拉取<pre class=" language-shell"><code class="language-shell">git clone 码云仓库webUrl地址</code></pre>
+</li>
+<li>输入码云账号的用户名和密码</li>
+</ol>
+<hr>
+<h5 id="第三步-迁移本地码云仓库到GitHub"><a href="#第三步-迁移本地码云仓库到GitHub" class="headerlink" title="第三步 迁移本地码云仓库到GitHub"></a>第三步 迁移本地码云仓库到GitHub</h5><ul>
+<li>移除码云远端 <pre class=" language-shell"><code class="language-shell">git remote remove origin</code></pre>
+</li>
+<li>添加GitHub远端<pre class=" language-shell"><code class="language-shell">git remote add origin GitHub的webRul地址</code></pre>
+<ul>
+<li>推送到GitHub的master(若有多个分支则多次推送)<pre class=" language-shell"><code class="language-shell">git push -u origin master</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>参考 <a href="https://blog.csdn.net/qq598535550/article/details/87870931" target="_blank" rel="noopener">https://blog.csdn.net/qq598535550/article/details/87870931</a></p>
+</blockquote>
 
             </div>
             <hr/>
@@ -488,7 +516,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/01/hello-world/">http://yoursite.com/2020/03/01/hello-world/</a>
+                    <a href="http://yoursite.com/2020/03/01/jie-jue-guo-nei-gitclone-tai-man-de-fang-fa/">http://yoursite.com/2020/03/01/jie-jue-guo-nei-gitclone-tai-man-de-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -693,29 +721,33 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/03/01/jie-jue-guo-nei-gitclone-tai-man-de-fang-fa/">
+                <a href="/2020/03/02/zai-mac-zhong-duan-zhong-shi-yong-dai-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="解决国内gitClone太慢的方法">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="在mac终端中使用代理">
                         
-                        <span class="card-title">解决国内gitClone太慢的方法</span>
+                        <span class="card-title">在mac终端中使用代理</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            解决git clone 卡顿的问题
-众所周知，国内因为不可描述的原因，git clone 特别卡,今天搞了很久，终于解决了，下面是方法
+                            1. 下载和配置clashX
+下载
+安装
+配置(需要全局)
 
 
-第一步 把github项目迁移到码云
-获取要迁移GitHub项目的 Web Url:在项目首页点击”
+2. 找到clashX的配置文件
+路径 /Users/用户名/.config/clash/config.yaml
+查看 config.yaml文件 
+找到 socks-port
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
                         </span>
                         <span class="publish-author">
                             
@@ -732,7 +764,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                Current&nbsp;<i class="far fa-dot-circle"></i>
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2020/03/01/hello-world/">
@@ -762,7 +794,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1042,6 +1073,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-<script src="/node_modules/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"node_modules/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/node_modules/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false});</script></body>
+</body>
 
 </html>
