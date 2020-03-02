@@ -4,16 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="在mac终端中使用代理, Hexo">
-    <meta name="description" content="1. 下载和配置clashX
-下载
-安装
-配置(需要全局)
+    <meta name="keywords" content="解决国内gitClone太慢的方法, Hexo">
+    <meta name="description" content="解决git clone 卡顿的问题
+众所周知，国内因为不可描述的原因，git clone 特别卡,今天搞了很久，终于解决了，下面是方法
 
-2. 找到clashX的配置文件
-路径 /Users/用户名/.config/clash/config.yaml
-查看 config.yaml文件 
-找到 socks-port:">
+
+第一步 把github项目迁移到码云
+获取要迁移GitHub项目的 Web Url:在项目首页点击”">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>在mac终端中使用代理 | Hexo</title>
+    <title>解决国内gitClone太慢的方法 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -34,7 +31,7 @@
     
     <script src="/libs/jquery/jquery.min.js"></script>
     
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -311,12 +308,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">在mac终端中使用代理</h1>
+                    <h1 class="description center-align post-title">解决国内gitClone太慢的方法</h1>
                 </div>
             </div>
         </div>
@@ -445,7 +442,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-02
+                    2020-03-01
                 </div>
                 
 
@@ -462,48 +459,37 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-下载和配置clashX"><a href="#1-下载和配置clashX" class="headerlink" title="1. 下载和配置clashX"></a>1. 下载和配置clashX</h4><ul>
-<li><a href="https://github.com/Dreamacro/clash" target="_blank" rel="noopener">下载</a></li>
-<li>安装</li>
-<li><a href="https://renzhe.cloud/user/tutorial?os=mac&client=clashx" target="_blank" rel="noopener">配置(需要全局)</a></li>
-</ul>
-<h4 id="2-找到clashX的配置文件"><a href="#2-找到clashX的配置文件" class="headerlink" title="2. 找到clashX的配置文件"></a>2. 找到clashX的配置文件</h4><ul>
-<li>路径 /Users/用户名/.config/clash/config.yaml</li>
-<li>查看 config.yaml文件 </li>
-<li>找到 socks-port: 7891 (有用)</li>
-</ul>
-<h4 id="3-下载安装-proxychains"><a href="#3-下载安装-proxychains" class="headerlink" title="3. 下载安装 proxychains"></a>3. 下载安装 proxychains</h4><figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安装</span></span><br><span class="line">brew install proxychains-ng</span><br><span class="line"><span class="meta">#</span><span class="bash"> 配置文件</span></span><br><span class="line">/usr/local/etc/proxychains.conf</span><br></pre></td></tr></table></figure>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Test</span></span>&#123;</span><br><span class="line"><span class="keyword">int</span> a=<span class="number">10</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="4-配置-proxychains"><a href="#4-配置-proxychains" class="headerlink" title="4.配置 proxychains"></a>4.配置 proxychains</h4><ol>
-<li><p>关闭<a href="https://support.apple.com/zh-cn/HT204899" target="_blank" rel="noopener">SIP</a></p>
-<ul>
-<li>将mac关机</li>
-<li>开机后按住 com+r，直到看到Apple标志或者旋转的地球</li>
-<li>看到 实用工具</li>
-<li>选择 实用工具 &gt; 终端</li>
-<li>输入  csrutil disable</li>
-<li>重启</li>
-</ul>
-</li>
-<li><p>重启后，打开终端，输入 csrutil status</p>
-<ul>
-<li>若显示  System Integrity Protection status: disabled.(表明关闭成功)</li>
-<li>若需要打开 SIP 终端输入 &gt; csrutil enable</li>
-</ul>
-</li>
-<li><p>编辑 proxychains 的配置文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑</span></span><br><span class="line">vim  /usr/<span class="built_in">local</span>/etc/proxychains.conf</span><br><span class="line"><span class="comment"># 更改, 将结尾的的 socks4 127.0.0.1 9095 改为</span></span><br><span class="line">sorks5 127.0.0.1 7891</span><br></pre></td></tr></table></figure>
-
-</li>
+                <h2 id="解决git-clone-卡顿的问题"><a href="#解决git-clone-卡顿的问题" class="headerlink" title="解决git clone 卡顿的问题"></a>解决git clone 卡顿的问题</h2><blockquote>
+<p>众所周知，国内因为不可描述的原因，git clone 特别卡,今天搞了很久，终于解决了，下面是方法</p>
+</blockquote>
+<hr>
+<h5 id="第一步-把github项目迁移到码云"><a href="#第一步-把github项目迁移到码云" class="headerlink" title="第一步 把github项目迁移到码云"></a>第一步 把github项目迁移到码云</h5><ol>
+<li>获取要迁移GitHub项目的 Web Url:在项目首页点击”clone or download”,点击复制就有了</li>
+<li>在码云上新建一个项目: 在主页点击”+”，选择”从GitHub导入仓库”，填写”Git 仓库url地址”,就是刚复制的</li>
 </ol>
-<h4 id="5-常用方法"><a href="#5-常用方法" class="headerlink" title="5. 常用方法"></a>5. 常用方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 代理终端命令</span></span><br><span class="line">proxychains4 curl www.google.com</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 全局代理Bash bash</span></span><br><span class="line">proxychains4 -q /bin/bash</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 全局代理zsh bash</span></span><br><span class="line">proxychains4 -q /bin/zsh</span><br></pre></td></tr></table></figure>
-<h4 id="6-如果懒得输入这么多，可以给-proxychains4设置个别名"><a href="#6-如果懒得输入这么多，可以给-proxychains4设置个别名" class="headerlink" title="6. 如果懒得输入这么多，可以给 proxychains4设置个别名"></a>6. 如果懒得输入这么多，可以给 proxychains4设置个别名</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置别名</span></span><br><span class="line"><span class="built_in">alias</span> fuck=<span class="string">'proxychains4'</span></span><br><span class="line">如果是 zhs用户，则需要在 ~/.zhshrc  中添加别名</span><br><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h4><blockquote>
-<p><a href="https://www.sqlsec.com/2019/12/macos.html#toc-heading-15" target="_blank" rel="noopener">国光大佬</a></p>
-<p><a href="https://sspai.com/post/55066" target="_blank" rel="noopener">少数派</a></p>
+<hr>
+<h5 id="第二步-本地clone码云仓库"><a href="#第二步-本地clone码云仓库" class="headerlink" title="第二步 本地clone码云仓库"></a>第二步 本地clone码云仓库</h5><ol>
+<li>复制码云仓库的web url地址</li>
+<li>打开终端</li>
+<li>进入想要放置项目的仓库</li>
+<li>拉取<pre class=" language-shell"><code class="language-shell">git clone 码云仓库webUrl地址</code></pre>
+</li>
+<li>输入码云账号的用户名和密码</li>
+</ol>
+<hr>
+<h5 id="第三步-迁移本地码云仓库到GitHub"><a href="#第三步-迁移本地码云仓库到GitHub" class="headerlink" title="第三步 迁移本地码云仓库到GitHub"></a>第三步 迁移本地码云仓库到GitHub</h5><ul>
+<li>移除码云远端 <pre class=" language-shell"><code class="language-shell">git remote remove origin</code></pre>
+</li>
+<li>添加GitHub远端<pre class=" language-shell"><code class="language-shell">git remote add origin GitHub的webRul地址</code></pre>
+<ul>
+<li>推送到GitHub的master(若有多个分支则多次推送)<pre class=" language-shell"><code class="language-shell">git push -u origin master</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>参考 <a href="https://blog.csdn.net/qq598535550/article/details/87870931" target="_blank" rel="noopener">https://blog.csdn.net/qq598535550/article/details/87870931</a></p>
 </blockquote>
 
             </div>
@@ -530,7 +516,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/02/%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/">http://yoursite.com/2020/03/02/%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/</a>
+                    <a href="http://yoursite.com/2020/03/01/jie-jue-guo-nei-gitclone-tai-man-de-fang-fa/">http://yoursite.com/2020/03/01/jie-jue-guo-nei-gitclone-tai-man-de-fang-fa/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -731,12 +717,11 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2020/03/02/%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/">
+                <a href="/2020/03/02/zai-mac-zhong-duan-zhong-shi-yong-dai-li/">
                     <div class="card-image">
                         
                         
@@ -760,9 +745,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -771,7 +756,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -782,24 +766,19 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/01/%E8%A7%A3%E5%86%B3%E5%9B%BD%E5%86%85gitClone%E5%A4%AA%E6%85%A2%E7%9A%84%E6%96%B9%E6%B3%95/">
+                <a href="/2020/03/01/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="解决国内gitClone太慢的方法">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">解决国内gitClone太慢的方法</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            解决git clone 卡顿的问题
-众所周知，国内因为不可描述的原因，git clone 特别卡,今天搞了很久，终于解决了，下面是方法
-
-
-第一步 把github项目迁移到码云
-获取要迁移GitHub项目的 Web Url:在项目首页点击”
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
                         
                     </div>
                     <div class="publish-info">
