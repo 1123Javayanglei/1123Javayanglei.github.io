@@ -10,10 +10,11 @@
 安装
 配置(需要全局)
 
+
 2. 找到clashX的配置文件
 路径 /Users/用户名/.config/clash/config.yaml
 查看 config.yaml文件 
-找到 socks-port:">
+找到 socks-port">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -467,15 +468,18 @@
 <li>安装</li>
 <li><a href="https://renzhe.cloud/user/tutorial?os=mac&client=clashx" target="_blank" rel="noopener">配置(需要全局)</a></li>
 </ul>
+<hr>
 <h4 id="2-找到clashX的配置文件"><a href="#2-找到clashX的配置文件" class="headerlink" title="2. 找到clashX的配置文件"></a>2. 找到clashX的配置文件</h4><ul>
 <li>路径 /Users/用户名/.config/clash/config.yaml</li>
 <li>查看 config.yaml文件 </li>
 <li>找到 socks-port: 7891 (有用)</li>
 </ul>
+<hr>
 <h4 id="3-下载安装-proxychains"><a href="#3-下载安装-proxychains" class="headerlink" title="3. 下载安装 proxychains"></a>3. 下载安装 proxychains</h4><pre class=" language-shell"><code class="language-shell"># 安装
 brew install proxychains-ng
 # 配置文件
 /usr/local/etc/proxychains.conf</code></pre>
+<hr>
 <h4 id="4-配置-proxychains"><a href="#4-配置-proxychains" class="headerlink" title="4.配置 proxychains"></a>4.配置 proxychains</h4><ol>
 <li><p>关闭<a href="https://support.apple.com/zh-cn/HT204899" target="_blank" rel="noopener">SIP</a></p>
 <ul>
@@ -500,6 +504,7 @@ vim  /usr/local/etc/proxychains.conf
 sorks5 127.0.0.1 7891 </code></pre>
 </li>
 </ol>
+<hr>
 <h4 id="5-常用方法"><a href="#5-常用方法" class="headerlink" title="5. 常用方法"></a>5. 常用方法</h4><pre class=" language-shell"><code class="language-shell"># 代理终端命令
 proxychains4 curl www.google.com
 
@@ -508,10 +513,12 @@ proxychains4 -q /bin/bash
 
 # 全局代理zsh bash
 proxychains4 -q /bin/zsh</code></pre>
+<hr>
 <h4 id="6-如果懒得输入这么多，可以给-proxychains4设置个别名"><a href="#6-如果懒得输入这么多，可以给-proxychains4设置个别名" class="headerlink" title="6. 如果懒得输入这么多，可以给 proxychains4设置个别名"></a>6. 如果懒得输入这么多，可以给 proxychains4设置个别名</h4><pre class=" language-shell"><code class="language-shell"># 设置别名
 alias fuck='proxychains4'
 # 如果是 zhs用户,则需要在 ~/.zhshrc  中添加别名
 vim ~/.zshrc</code></pre>
+<hr>
 <h4 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h4><blockquote>
 <p><a href="https://www.sqlsec.com/2019/12/macos.html#toc-heading-15" target="_blank" rel="noopener">国光大佬</a></p>
 <p><a href="https://sspai.com/post/55066" target="_blank" rel="noopener">少数派</a></p>
@@ -764,10 +771,11 @@ vim ~/.zshrc</code></pre>
 安装
 配置(需要全局)
 
+
 2. 找到clashX的配置文件
 路径 /Users/用户名/.config/clash/config.yaml
 查看 config.yaml文件 
-找到 socks-port:
+找到 socks-port
                         
                     </div>
                     <div class="publish-info">
