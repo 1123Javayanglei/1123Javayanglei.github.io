@@ -497,23 +497,20 @@ brew install proxychains-ng
 <pre class=" language-shell"><code class="language-shell"># 编辑
 vim  /usr/local/etc/proxychains.conf
 # 更改, 将结尾的的 socks4 127.0.0.1 9095 改为
-sorks5 127.0.0.1 7891 
-</code></pre>
+sorks5 127.0.0.1 7891 </code></pre>
 </li>
 </ol>
-<pre><code>
-#### 5. 常用方法
-```shell script
-# 代理终端命令
+<h4 id="5-常用方法"><a href="#5-常用方法" class="headerlink" title="5. 常用方法"></a>5. 常用方法</h4><pre class=" language-shell"><code class="language-shell"># 代理终端命令
 proxychains4 curl www.google.com
 
 # 全局代理Bash bash
 proxychains4 -q /bin/bash
 
 # 全局代理zsh bash
-proxychains4 -q /bin/zsh</code></pre><h4 id="6-如果懒得输入这么多，可以给-proxychains4设置个别名"><a href="#6-如果懒得输入这么多，可以给-proxychains4设置个别名" class="headerlink" title="6. 如果懒得输入这么多，可以给 proxychains4设置个别名"></a>6. 如果懒得输入这么多，可以给 proxychains4设置个别名</h4><pre class=" language-shell"><code class="language-shell"># 设置别名
+proxychains4 -q /bin/zsh</code></pre>
+<h4 id="6-如果懒得输入这么多，可以给-proxychains4设置个别名"><a href="#6-如果懒得输入这么多，可以给-proxychains4设置个别名" class="headerlink" title="6. 如果懒得输入这么多，可以给 proxychains4设置个别名"></a>6. 如果懒得输入这么多，可以给 proxychains4设置个别名</h4><pre class=" language-shell"><code class="language-shell"># 设置别名
 alias fuck='proxychains4'
-如果是 zhs用户，则需要在 ~/.zhshrc  中添加别名
+# 如果是 zhs用户,则需要在 ~/.zhshrc  中添加别名
 vim ~/.zshrc</code></pre>
 <h4 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h4><blockquote>
 <p><a href="https://www.sqlsec.com/2019/12/macos.html#toc-heading-15" target="_blank" rel="noopener">国光大佬</a></p>
