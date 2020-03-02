@@ -4,16 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="在mac终端中使用代理, Hexo">
-    <meta name="description" content="1. 下载和配置clashX
-下载
-安装
-配置(需要全局)
-
-2. 找到clashX的配置文件
-路径 /Users/用户名/.config/clash/config.yaml
-查看 config.yaml文件 
-找到 socks-port:">
+    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>在mac终端中使用代理 | Hexo</title>
+    <title>Hello World | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -311,12 +303,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">在mac终端中使用代理</h1>
+                    <h1 class="description center-align post-title">Hello World</h1>
                 </div>
             </div>
         </div>
@@ -445,7 +437,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2020-03-02
+                    2020-03-01
                 </div>
                 
 
@@ -462,46 +454,19 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h4 id="1-下载和配置clashX"><a href="#1-下载和配置clashX" class="headerlink" title="1. 下载和配置clashX"></a>1. 下载和配置clashX</h4><ul>
-<li><a href="https://github.com/Dreamacro/clash" target="_blank" rel="noopener">下载</a></li>
-<li>安装</li>
-<li><a href="https://renzhe.cloud/user/tutorial?os=mac&client=clashx" target="_blank" rel="noopener">配置(需要全局)</a></li>
-</ul>
-<h4 id="2-找到clashX的配置文件"><a href="#2-找到clashX的配置文件" class="headerlink" title="2. 找到clashX的配置文件"></a>2. 找到clashX的配置文件</h4><ul>
-<li>路径 /Users/用户名/.config/clash/config.yaml</li>
-<li>查看 config.yaml文件 </li>
-<li>找到 socks-port: 7891 (有用)</li>
-</ul>
-<h4 id="3-下载安装-proxychains"><a href="#3-下载安装-proxychains" class="headerlink" title="3. 下载安装 proxychains"></a>3. 下载安装 proxychains</h4>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装</span></span><br><span class="line">brew install proxychains-ng</span><br><span class="line"><span class="comment"># 配置文件</span></span><br><span class="line">/usr/<span class="built_in">local</span>/etc/proxychains.conf</span><br></pre></td></tr></table></figure>
+                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="4-配置-proxychains"><a href="#4-配置-proxychains" class="headerlink" title="4.配置 proxychains"></a>4.配置 proxychains</h4><ol>
-<li><p>关闭<a href="https://support.apple.com/zh-cn/HT204899" target="_blank" rel="noopener">SIP</a></p>
-<ul>
-<li>将mac关机</li>
-<li>开机后按住 com+r，直到看到Apple标志或者旋转的地球</li>
-<li>看到 实用工具</li>
-<li>选择 实用工具 &gt; 终端</li>
-<li>输入  csrutil disable</li>
-<li>重启</li>
-</ul>
-</li>
-<li><p>重启后，打开终端，输入 csrutil status</p>
-<ul>
-<li>若显示  System Integrity Protection status: disabled.(表明关闭成功)</li>
-<li>若需要打开 SIP 终端输入 &gt; csrutil enable</li>
-</ul>
-</li>
-<li><p>编辑 proxychains 的配置文件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 编辑</span></span><br><span class="line">vim  /usr/<span class="built_in">local</span>/etc/proxychains.conf</span><br><span class="line"><span class="comment"># 更改, 将结尾的的 socks4 127.0.0.1 9095 改为</span></span><br><span class="line">sorks5 127.0.0.1 7891</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-</li>
-</ol>
-<h4 id="5-常用方法"><a href="#5-常用方法" class="headerlink" title="5. 常用方法"></a>5. 常用方法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 代理终端命令</span></span><br><span class="line">proxychains4 curl www.google.com</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 全局代理Bash bash</span></span><br><span class="line">proxychains4 -q /bin/bash</span><br><span class="line">    </span><br><span class="line"><span class="comment"># 全局代理zsh bash</span></span><br><span class="line">proxychains4 -q /bin/zsh</span><br></pre></td></tr></table></figure>
-<h4 id="6-如果懒得输入这么多，可以给-proxychains4设置个别名"><a href="#6-如果懒得输入这么多，可以给-proxychains4设置个别名" class="headerlink" title="6. 如果懒得输入这么多，可以给 proxychains4设置个别名"></a>6. 如果懒得输入这么多，可以给 proxychains4设置个别名</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置别名</span></span><br><span class="line"><span class="built_in">alias</span> fuck=<span class="string">'proxychains4'</span></span><br><span class="line">如果是 zhs用户，则需要在 ~/.zhshrc  中添加别名</span><br><span class="line">vim ~/.zshrc</span><br></pre></td></tr></table></figure>
-<h4 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h4><blockquote>
-<p><a href="https://www.sqlsec.com/2019/12/macos.html#toc-heading-15" target="_blank" rel="noopener">国光大佬</a></p>
-<p><a href="https://sspai.com/post/55066" target="_blank" rel="noopener">少数派</a></p>
-</blockquote>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
             </div>
             <hr/>
@@ -527,7 +492,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://yoursite.com/2020/03/02/%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/">http://yoursite.com/2020/03/02/%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/</a>
+                    <a href="http://yoursite.com/2020/03/01/hello-world/">http://yoursite.com/2020/03/01/hello-world/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -728,56 +693,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;Current
-            </div>
-            <div class="card">
-                <a href="/2020/03/02/%E5%9C%A8mac%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="在mac终端中使用代理">
-                        
-                        <span class="card-title">在mac终端中使用代理</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            1. 下载和配置clashX
-下载
-安装
-配置(需要全局)
-
-2. 找到clashX的配置文件
-路径 /Users/用户名/.config/clash/config.yaml
-查看 config.yaml文件 
-找到 socks-port:
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-02
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            John Doe
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-            </div>
-        </div>
-        
-        
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
                 <a href="/2020/03/01/%E8%A7%A3%E5%86%B3%E5%9B%BD%E5%86%85gitClone%E5%A4%AA%E6%85%A2%E7%9A%84%E6%96%B9%E6%B3%95/">
                     <div class="card-image">
@@ -800,6 +718,43 @@
                         
                     </div>
                     <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-01
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            John Doe
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Current&nbsp;<i class="far fa-dot-circle"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/03/01/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2020-03-01
                             </span>
@@ -811,6 +766,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
