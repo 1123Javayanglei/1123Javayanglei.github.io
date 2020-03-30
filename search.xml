@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>查看和下载码云文件</title>
+      <link href="/2020/03/30/cha-kan-he-xia-zai-ma-yun-wen-jian/"/>
+      <url>/2020/03/30/cha-kan-he-xia-zai-ma-yun-wen-jian/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载和查看码云文件"><a href="#下载和查看码云文件" class="headerlink" title="下载和查看码云文件"></a>下载和查看码云文件</h2><blockquote><p> <a href="https://gitee.com/help" target="_blank" rel="noopener">什么是码云</a></p></blockquote><h3 id="一、查看或下载单个文件"><a href="#一、查看或下载单个文件" class="headerlink" title="一、查看或下载单个文件"></a>一、查看或下载单个文件</h3><ul><li><p>打开码云仓库地址，例如 <a href="https://gitee.com/Java1123yanglei/javase_26" target="_blank" rel="noopener">我的仓库</a></p></li><li><p>如下图 <img src="https://i.loli.net/2020/03/30/9DujvtHxPbA6Bys.png" alt="红色的框是资源区"></p></li><li><p>我们需要的资源都在红框这个地方，比如我们要下载思维导图，脑图存放在Javaxmind 这个文件夹中</p></li></ul><p><img src="https://i.loli.net/2020/03/30/k8pFWNAcTB6Lrle.png" alt="点击JavaXmind这个文件夹"></p><p><img src="https://i.loli.net/2020/03/30/5vLwV9Xh3THrQKN.png" alt="这是思维导图文件夹中的内容"></p><ul><li>例如 需要下载面向对象总结这个脑图文件 (XXXX.xmind的文件)<br><img src="https://i.loli.net/2020/03/30/T9lcSFzmr5Jyd6k.png" alt="点击 面向对象总结.xmind"><br><img src="https://i.loli.net/2020/03/30/fvyqL5Np6GnucdC.png" alt="点击 下载"></li><li>若显示 如下界面，注册一个码云账号就行了<br><img src="https://i.loli.net/2020/03/30/H1gwshc92lOPIWX.png" alt="注册并登陆账号就可以下载"><blockquote><p><a href="https://www.xmind.cn" target="_blank" rel="noopener">什么是脑图，如何打开</a> </p></blockquote></li></ul><hr><h3 id="二、下载整个项目"><a href="#二、下载整个项目" class="headerlink" title="二、下载整个项目"></a>二、下载整个项目</h3><h6 id="1、windows"><a href="#1、windows" class="headerlink" title="1、windows"></a>1、windows</h6><ol><li><a href="https://blog.csdn.net/qq_32786873/article/details/80570783" target="_blank" rel="noopener">下载和安装git</a></li><li>安装完成后，在开始菜单找到 “Git” -&gt; “Git Bash”,会跳出类似命令行窗口的东西，就说明Git安装完成<br><img src="https://www.liaoxuefeng.com/files/attachments/919018718363424/0" alt="窗口"></li><li>复制项目的地址<br><img src="https://images.gitee.com/uploads/images/2018/0815/115602_7e40b5ff_551147.png" alt="点击复制"></li><li>通过 git clone 下载仓库<pre class=" language-shell"><code class="language-shell">git clone 项目地址</code></pre></li><li>或者直接下载zip文件<br><img src="https://i.loli.net/2020/03/30/mYyOHrR4hNC9D6g.png" alt="点击下载，注意需要先登录"><h6 id="1、Mac"><a href="#1、Mac" class="headerlink" title="1、Mac"></a>1、Mac</h6></li><li>下载和安装homebrew<blockquote><p>通过 <a href="https://brew.sh/" target="_blank" rel="noopener">homebrew安装git</a></p></blockquote></li><li>下载 git(前提是homebrew安装)<pre class=" language-shell"><code class="language-shell">brew install git</code></pre></li><li>检查git是否安装成功<pre class=" language-shell"><code class="language-shell">git --version# 若输出如下内容，说明安装成功# git version 2.23.0</code></pre>获取项目地址<br><img src="https://images.gitee.com/uploads/images/2018/0815/115602_7e40b5ff_551147.png" alt="点击复制"></li></ol><p>通过git clone 下载仓库，打开终端</p><pre class=" language-shell"><code class="language-shell">git clone 项目地址</code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 码云 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>白嫖freenom域名,使用dnspod配置</title>
       <link href="/2020/03/03/bai-piao-freenom-yu-ming-shi-yong-dnspod-pei-zhi/"/>
       <url>/2020/03/03/bai-piao-freenom-yu-ming-shi-yong-dnspod-pei-zhi/</url>
