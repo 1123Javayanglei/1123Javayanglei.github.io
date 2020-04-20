@@ -4,6 +4,38 @@
   
     
     <entry>
+      <title>如何配一副眼镜</title>
+      <link href="/2020/04/11/ru-he-pei-yi-fu-yan-jing/"/>
+      <url>/2020/04/11/ru-he-pei-yi-fu-yan-jing/</url>
+      
+        <content type="html"><![CDATA[<h2 id="如何配一幅👓"><a href="#如何配一幅👓" class="headerlink" title="如何配一幅👓"></a>如何配一幅👓</h2><blockquote><ol><li>眼镜店 (贵)</li><li>医院 (贵)</li><li>网购 (便宜)</li></ol></blockquote><h3 id="通过网购配镜"><a href="#通过网购配镜" class="headerlink" title="通过网购配镜"></a>通过网购配镜</h3><h5 id="1-首先要拿到验光单"><a href="#1-首先要拿到验光单" class="headerlink" title="1. 首先要拿到验光单"></a>1. 首先要拿到验光单</h5><p> 你以为是这样的吗？</p><img src="https://gitee.com/Java1123yanglei/myPicture/raw/master/uPic/验光1_2.jpg" style="zoom:10%;" align=center><p>以下是我把该图片发给淘宝上的一些大一点的眼镜店的回复(直接劝我买的被略掉了)</p><blockquote><ol><li>帕森旗舰店<br> 验光仪器上出来的单子仅供配镜师参考，不可用于实际配镜数据。在配镜过程中，配镜师会使 用度数不同的插片进行测量您眼睛的准确度数，所以配镜师手写的单子才可作为配镜数据哦。   </li><li>宝岛眼镜<br>这是电脑的数据哦，只是验光的第一步。 配镜需要经过插片测试、试戴度数等步骤， 最终验光师手写的验光数据，才适合用于您配镜的呢 </li><li>pulais<br> 亲 你这个是机打的单子可能是不准确的哈</li><li>博士眼镜 良心大大的好<img src="https://gitee.com/Java1123yanglei/myPicture/raw/master/uPic/SAVE_20200411_200224.jpg" style="zoom:40%" align=top  ></li></ol></blockquote><hr><p><em>cao,傻逼医院害我，检测花了30块，只给了一个机器的单子，还tm一个劲劝我去医院配</em></p><blockquote><p>2020年4月11日下午3点，我又去了一家医院  邓州市人民医院北区，3楼眼科，我等了2个小时终于在5点见到了大夫，然后大夫说，只有在医院买眼镜才给验光，否则就不给，去门诊举报，领导不在，让我等到工作日再过来，打卫生局电话说他们处理不了，是医院内部的事情🐶</p></blockquote><blockquote><p>2020年4月11日晚，到了南阳市，打算明天去医院验光</p></blockquote><p>有眼光单了</p><blockquote><p><a href="https://gitee.com/Java1123yanglei/myPicture/raw/master/uPic/验光单.pdf" target="_blank" rel="noopener">验光单</a></p></blockquote><h5 id="2-淘宝购买"><a href="#2-淘宝购买" class="headerlink" title="2. 淘宝购买"></a>2. 淘宝购买</h5><ol><li>把验光单发给淘宝眼镜店的客服人员</li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Mac 安装maven</title>
+      <link href="/2020/04/10/mac-an-zhuang-maven/"/>
+      <url>/2020/04/10/mac-an-zhuang-maven/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Mac-下载安装maven"><a href="#Mac-下载安装maven" class="headerlink" title="Mac 下载安装maven"></a>Mac 下载安装maven</h2><blockquote><p><a href="https://www.liaoxuefeng.com/wiki/1252599548343744/1255945359327200" target="_blank" rel="noopener">什么是maven</a></p></blockquote><hr><h3 id="下载安装-maven"><a href="#下载安装-maven" class="headerlink" title="下载安装 maven"></a>下载安装 maven</h3><blockquote><p>使用brew ，什么是<a href="https://brew.sh/index_zh-cn" target="_blank" rel="noopener">brew</a></p></blockquote><ol><li><p>安装</p><pre class=" language-shell"><code class="language-shell"> brew install maven # 安装命令</code></pre></li><li><p>检查是否安装成功</p><pre class=" language-shell"><code class="language-shell">mvn -v</code></pre></li><li><p>若成功输出如下</p><pre class=" language-shell"><code class="language-shell"># 测试是否安装成功,成功则输出如下:Maven home: /usr/local/Cellar/maven/3.6.3_1/libexecJava version: 13, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-13.jdk/Contents/HomeDefault locale: zh_CN_#Hans, platform encoding: UTF-8OS name: "mac os x", version: "10.15.4", arch: "x86_64", family: "mac"</code></pre></li></ol><hr>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> maven </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>查看和下载码云文件</title>
       <link href="/2020/03/30/cha-kan-he-xia-zai-ma-yun-wen-jian/"/>
       <url>/2020/03/30/cha-kan-he-xia-zai-ma-yun-wen-jian/</url>
